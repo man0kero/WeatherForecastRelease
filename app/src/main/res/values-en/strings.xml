@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_text">First, choose a city</string>
+    <string name="btn_current_weather">Current weather</string>
+    <string name="btn_hourly_weather">Hourly forecast</string>
+    <string name="btn_daily_weather">Weekly forecast</string>
+    <string name="btn_change_city">Change city</string>
+    <string name="btn_city_search">Search</string>
+    <string name="city_search_layout">Enter the city name</string>
+    <string name="city_inner_toolbar">City search</string>
+    <string name="current_inner_toolbar">Current weather</string>
+    <string name="min_current">min</string>
+    <string name="feels_current">feels like</string>
+    <string name="max_current">max</string>
+    <string name="daily_inner_toolbar">Weekly forecast</string>
+    <string name="hourly_inner_toolbar">Hourly forecast</string>
+    <string name="pop">"Prob. of Precipitation: "</string>
+    <string name="loading">Loading</string>
+    <string name="onFailure_toast">Check Your Internet Connection</string>
+    <string name="onUpdate_toast">Updated</string>
+    <string name="pressure">hPa</string>
+    <string name="wind">m/s</string>
+    <string name="temperature">Temperature</string>
+    <string name="feels_like">Feels like</string>
+    <string name="morn">morn</string>
+    <string name="day">day</string>
+    <string name="eve">eve</string>
+    <string name="night">night</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressureS">Pressure</string>
+    <string name="wind_speed">"Wind speed: "</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="lick_to_see_more">Сlick to see more</string>
+    <string name="onResponse_toast">City not found, try again</string>
+    <string name="updated">"Updated: "</string>
+    <string name="first_ad_text">Click the button to select the city, after that the forecast will be available to you!</string>
+    <string name="first_ad_toolbar_tittle">You need to select a city</string>
+    <string name="tittle">Check the weather forecast before going outside 😉</string>
+    <string name="body">Have a nice day 😉</string>
+    <string name="onWait_toast">Wait for data update</string>
+</resources>

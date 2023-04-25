@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_text">Спочатку обери місто</string>
+    <string name="btn_current_weather">Поточна погода</string>
+    <string name="btn_hourly_weather">Погодинний прогноз</string>
+    <string name="btn_daily_weather">Тижневий прогноз</string>
+    <string name="btn_change_city">Змінити місто</string>
+    <string name="btn_city_search">Шукати</string>
+    <string name="city_search_layout">Введіть назву міста</string>
+    <string name="city_inner_toolbar">Пошук міста</string>
+    <string name="current_inner_toolbar">Поточна погода</string>
+    <string name="min_current">мін</string>
+    <string name="feels_current">відчувається як</string>
+    <string name="max_current">макс</string>
+    <string name="daily_inner_toolbar">Тижневий прогноз</string>
+    <string name="hourly_inner_toolbar">Погодинний прогноз</string>
+    <string name="pop">"Ймовірність опадів: "</string>
+    <string name="loading">Завантаження</string>
+    <string name="onFailure_toast">Перевірте своє інтернет-з\'єднання</string>
+    <string name="pressure">гПа</string>
+    <string name="wind">м/с</string>
+    <string name="temperature">Температура</string>
+    <string name="feels_like">Відчувається як</string>
+    <string name="morn">ранок</string>
+    <string name="day">день</string>
+    <string name="eve">вечір</string>
+    <string name="night">ніч</string>
+    <string name="humidity">Вологість</string>
+    <string name="pressureS">Тиск</string>
+    <string name="wind_speed">"Швидкість вітру: "</string>
+    <string name="sunrise">Світанок</string>
+    <string name="sunset">Захід сонця</string>
+    <string name="lick_to_see_more">Натисніть, щоб побачити більше</string>
+    <string name="onResponse_toast">Місто не знайдено, спробуйте ще раз</string>
+    <string name="onUpdate_toast">Оновлено</string>
+    <string name="updated">"Оновлено: "</string>
+    <string name="first_ad_text">Натисніть кнопку, щоб обрати місто, після чого вам буде доступний прогноз!</string>
+    <string name="first_ad_toolbar_tittle">Вам потрібно обрати місто</string>
+    <string name="tittle">Перевірте прогноз погоди перед тим, як вийти на вулицю 😉.</string>
+    <string name="body">Гарного дня 😉</string>
+    <string name="onWait_toast">Зачекайте оновлення даних</string>
+</resources>

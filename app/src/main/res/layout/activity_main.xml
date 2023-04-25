@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiper"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            tools:context=".view.MainActivity">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_city"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/hint_text"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_text"
+                android:textSize="30sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@id/top_line"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_city" />
+
+            <LinearLayout
+                android:id="@+id/main_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@id/top_line"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_city">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/current_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="70sp"
+                    tools:text="25\u00B0" />
+
+                <ImageView
+                    android:id="@+id/current_weather_icon"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@id/current_temp"
+                    app:layout_constraintLeft_toRightOf="@id/current_temp"
+                    app:layout_constraintTop_toTopOf="@id/current_temp"
+                    tools:src="@drawable/ic_02d" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/updated_layout"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/main_temp">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/updated" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/updated_dt"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="15:30" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/progress_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@id/top_line"
+                app:layout_constraintLeft_toLeftOf="@id/main_temp"
+                app:layout_constraintRight_toRightOf="@id/main_temp"
+                app:layout_constraintTop_toBottomOf="@id/text_city">
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:indeterminate="true"
+                    app:indicatorColor="#262326"
+                    app:trackColor="@color/white" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/loading"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/top_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/top_line">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_current_weather"
+                    style="@style/main_button_style"
+                    android:text="@string/btn_current_weather"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_hourly_weather"
+                    style="@style/main_button_style"
+                    android:text="@string/btn_hourly_weather"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_daily_weather"
+                    style="@style/main_button_style"
+                    android:text="@string/btn_daily_weather" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_change_city"
+                    style="@style/main_button_style"
+                    android:text="@string/btn_change_city" />
+
+            </GridLayout>
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_id"
+                ads:layout_constraintBottom_toBottomOf="parent"
+                ads:layout_constraintEnd_toEndOf="parent"
+                ads:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

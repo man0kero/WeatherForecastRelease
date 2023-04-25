@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_text">Сначала выбери город</string>
+    <string name="btn_current_weather">Текущая погода</string>
+    <string name="btn_hourly_weather">Почасовой прогноз</string>
+    <string name="btn_daily_weather">Недельный прогноз</string>
+    <string name="btn_change_city">Изменить город</string>
+    <string name="btn_city_search">Искать</string>
+    <string name="city_search_layout">Введите название города</string>
+    <string name="city_inner_toolbar">Поиск города</string>
+    <string name="current_inner_toolbar">Текущая погода</string>
+    <string name="min_current">мин</string>
+    <string name="feels_current">ощущается как</string>
+    <string name="max_current">макс</string>
+    <string name="daily_inner_toolbar">Недельный прогноз</string>
+    <string name="hourly_inner_toolbar">Почасовой прогноз</string>
+    <string name="pop">"Вероятность осадков: "</string>
+    <string name="loading">Загрузка</string>
+    <string name="onFailure_toast">Проверьте подключение к Интернету</string>
+    <string name="pressure">гПа</string>
+    <string name="wind">м/с</string>
+    <string name="temperature">Температура</string>
+    <string name="feels_like">Ощущается как</string>
+    <string name="morn">утро</string>
+    <string name="day">день</string>
+    <string name="eve">вечер</string>
+    <string name="night">ночь</string>
+    <string name="humidity">Влажность</string>
+    <string name="pressureS">Давление</string>
+    <string name="wind_speed">"Скорость ветра: "</string>
+    <string name="sunrise">Восход</string>
+    <string name="sunset">Заход солнца</string>
+    <string name="lick_to_see_more">Нажмите, чтобы увидеть больше</string>
+    <string name="onResponse_toast">Город не найден, попробуйте ещё раз</string>
+    <string name="onUpdate_toast">Обновлено</string>
+    <string name="updated">"Обновлено: "</string>
+    <string name="first_ad_text">Нажмите на кнопку, чтобы выбрать город, после чего прогноз будет доступен для вас!</string>
+    <string name="first_ad_toolbar_tittle">Вам необходимо выбрать город</string>
+    <string name="tittle">Проверяйте прогноз погоды перед выходом на улицу 😉.</string>
+    <string name="body">Хорошего дня 😉</string>
+    <string name="onWait_toast">Подождите обновления данных</string>
+</resources>

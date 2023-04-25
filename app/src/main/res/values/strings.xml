@@ -45,6 +45,7 @@
     <string name="key_lon" translatable="false">lon</string>
     <string name="key_is_started_up" translatable="false">Is started up</string>
 
+    <!-- TODO change id & key -->
     <string name="weather_api_key" translatable="false">86e907e14e12eac3762ed037116e4e43</string>
     <string name="banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>

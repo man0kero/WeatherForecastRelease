@@ -8,7 +8,6 @@ import androidx.lifecycle.MutableLiveData;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.R;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.api.ApiProvider;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.model.WeatherDataModel;
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.view.MainActivity;
 
 import java.util.Locale;
 

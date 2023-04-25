@@ -59,8 +59,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:includeFontPadding="false"
-                tools:text="25\u00B0"
-                android:textSize="70sp" />
+                android:textSize="70sp"
+                tools:text="25\u00B0" />
 
             <ImageView
                 android:id="@+id/current_weather_icon"
@@ -70,21 +70,21 @@
                 app:layout_constraintBottom_toBottomOf="@id/current_temp"
                 app:layout_constraintLeft_toRightOf="@id/current_temp"
                 app:layout_constraintTop_toTopOf="@id/current_temp"
-                tools:src="@drawable/ic_02d"/>
+                tools:src="@drawable/ic_02d" />
         </LinearLayout>
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/current_weather_info"
+            style="@style/TextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Дождь"
-            style="@style/TextStyle"
             android:textSize="25sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/top_line"
             app:layout_constraintBottom_toTopOf="@id/tempAndIcon"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/top_line"
+            tools:text="Дождь" />
 
         <LinearLayout
             android:id="@+id/temp_info"
@@ -102,22 +102,22 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:includeFontPadding="false"
-                    style="@style/TextStyle"
                     android:text="@string/min_current"
                     android:textSize="20sp" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/current_min_t"
+                    style="@style/TextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    tools:text="19\u00B0"
-                    style="@style/TextStyle"
-                    android:textSize="25sp" />
+                    android:textSize="25sp"
+                    tools:text="19\u00B0" />
 
             </LinearLayout>
 
@@ -137,22 +137,22 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:includeFontPadding="false"
                     android:text="@string/feels_current"
-                    style="@style/TextStyle"
                     android:textSize="20sp" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/current_feels_t"
+                    style="@style/TextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    tools:text="23\u00B0"
-                    style="@style/TextStyle"
-                    android:textSize="25sp"/>
+                    android:textSize="25sp"
+                    tools:text="23\u00B0" />
 
             </LinearLayout>
 
@@ -172,38 +172,36 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.textview.MaterialTextView
+                    style="@style/TextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:includeFontPadding="false"
                     android:text="@string/max_current"
-                    style="@style/TextStyle"
                     android:textSize="20sp" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/current_max_t"
+                    style="@style/TextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    tools:text="28\u00B0"
-                    style="@style/TextStyle"
-                    android:textSize="25sp" />
+                    android:textSize="25sp"
+                    tools:text="28\u00B0" />
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            ads:layout_constraintStart_toStartOf="parent"
-            ads:layout_constraintEnd_toEndOf="parent"
-            ads:layout_constraintBottom_toBottomOf="parent"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/banner_id">
-        </com.google.android.gms.ads.AdView>
+            ads:adUnitId="@string/banner_id"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

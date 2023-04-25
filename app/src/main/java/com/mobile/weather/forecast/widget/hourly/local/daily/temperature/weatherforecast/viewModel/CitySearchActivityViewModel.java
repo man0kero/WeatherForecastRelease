@@ -13,14 +13,14 @@ import java.util.List;
 
 public class CitySearchActivityViewModel extends AndroidViewModel {
 
-    private CityRepository cityRepository;
+    private final CityRepository cityRepository;
 
     public CitySearchActivityViewModel(@NonNull Application application) {
         super(application);
         cityRepository = new CityRepository(application);
     }
 
-    public LiveData<List<GeoCodeModel>> getAllCities(String city){
+    public LiveData<List<GeoCodeModel>> getAllCities(String city) {
         return cityRepository.getMutableLiveData(city);
     }
 }

@@ -5,9 +5,9 @@
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swiper"
-        android:enabled="false"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:enabled="false">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -74,11 +74,11 @@
 
             <LinearLayout
                 android:id="@+id/updated_layout"
-                android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:orientation="horizontal"
+                android:visibility="invisible"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/main_temp">
@@ -102,11 +102,11 @@
 
 
             <LinearLayout
-                android:visibility="visible"
                 android:id="@+id/progress_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="@id/top_line"
                 app:layout_constraintLeft_toLeftOf="@id/main_temp"
                 app:layout_constraintRight_toRightOf="@id/main_temp"
@@ -151,12 +151,12 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_current_weather"
                     style="@style/main_button_style"
-                    android:text="@string/btn_current_weather"/>
+                    android:text="@string/btn_current_weather" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_hourly_weather"
                     style="@style/main_button_style"
-                    android:text="@string/btn_hourly_weather"/>
+                    android:text="@string/btn_hourly_weather" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_daily_weather"

@@ -16,8 +16,6 @@ import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weather
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.databinding.ActivityCurrentWeatherBinding;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.model.WeatherDataModel;
 
-import java.util.ArrayList;
-
 public class CurrentWeatherActivity extends AppCompatActivity {
     private AdRequest adRequest;
     private ActivityCurrentWeatherBinding binding;

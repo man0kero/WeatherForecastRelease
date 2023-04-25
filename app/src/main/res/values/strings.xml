@@ -1,6 +1,4 @@
 <resources>
-    <string name="comma" translatable="false">, %1$s</string>
-    <string name="app_name" translatable="false">Weather Forecast - Radar, Widget</string>
     <string name="hint_text">First, choose a city</string>
     <string name="btn_current_weather">Current weather</string>
     <string name="btn_hourly_weather">Hourly forecast</string>
@@ -35,12 +33,12 @@
     <string name="sunrise">Sunrise</string>
     <string name="sunset">Sunset</string>
     <string name="lick_to_see_more">Сlick to see more</string>
-    <string name="updated">Updated: </string>
+    <string name="updated">Updated:</string>
     <string name="first_ad_text">Click the button to select the city, after that the forecast will be available to you!</string>
+    <string name="first_ad_toolbar_tittle">You need to select a city</string>
 
-    <string name="tittle">Check the weather forecast before going outside 😉</string>
-    <string name="body">Have a nice day 😉</string>
-
+    <string name="comma" translatable="false">, %1$s</string>
+    <string name="app_name" translatable="false">Weather Forecast - Radar, Widget</string>
     <string name="prefs_name" translatable="false">App_settings</string>
     <string name="key_city_name" translatable="false">City_name</string>
     <string name="key_lat" translatable="false">lat</string>
@@ -51,5 +49,4 @@
     <string name="banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
     <string name="ad_open_id" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
-    <string name="first_ad_toolbar_tittle">You need to select a city</string>
 </resources>

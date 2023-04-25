@@ -11,14 +11,14 @@ import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weather
 
 
 public class MainActivityViewModel extends AndroidViewModel {
-    private MainRepository mainRepository;
+    private final MainRepository mainRepository;
 
     public MainActivityViewModel(@NonNull Application application) {
         super(application);
         mainRepository = new MainRepository(application);
     }
 
-    public LiveData<WeatherDataModel> getWeather(String lat, String lon){
+    public LiveData<WeatherDataModel> getWeather(String lat, String lon) {
         return mainRepository.getWeather(lat, lon);
     }
 }

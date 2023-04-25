@@ -6,31 +6,21 @@ import static com.mobile.weather.forecast.widget.hourly.local.daily.temperature.
 import static com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.Util.toDateFormatOf;
 import static com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.Util.toDegree;
 
-import android.Manifest;
 import android.app.Application;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.messaging.FirebaseMessaging;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.R;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.ads.AdOpen;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.ads.InterstitialAdImpl;
@@ -70,8 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
         loadAds();
         checkIsStartedUp();
-        pushNotProvider();
-        askNotificationPermission();
         startingOtherActivities();
         getWeatherData();
     }
@@ -96,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                                 toDegree(resultWeatherDataModel.getCurrent().getTemp()));
                         binding.currentWeatherIcon.setImageResource(
                                 provideIcon(resultWeatherDataModel.getCurrent().getWeather().get(0).getIcon()));
-                        binding.updatedDt.setText(
+                        binding.updatedDt.setText(" " +
                                 toDateFormatOf(resultWeatherDataModel.getCurrent().getDt(),
                                         HOUR_DOUBLE_DOT_MINUTE));
 
@@ -160,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
             interstitialAd.showAds(this);
         });
 
-        if(preferences.contains("lat") && preferences.contains("lon") && flag) {
+        if (preferences.contains("lat") && preferences.contains("lon") && flag) {
             binding.swiper.setEnabled(true);
             binding.swiper.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                 @Override
@@ -174,49 +162,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void askNotificationPermission() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) ==
-                PackageManager.PERMISSION_GRANTED) {
-            Log.d("Notifications permission",
-                    "Notifications permission granted");
-        } else {
-            final ActivityResultLauncher<String> requestPermissionLauncher = registerForActivityResult(
-                    new ActivityResultContracts.RequestPermission(),
-                    new ActivityResultCallback<Boolean>() {
-                        @Override
-                        public void onActivityResult(Boolean isGranted) {
-                            if (isGranted) {
-                                Log.d("Notifications permission",
-                                        "Notifications permission granted");
-                            } else {
-                                Log.d("Notifications permission",
-                                        "FCM can't post notifications without POST_NOTIFICATIONS permission");
-                            }
-                        }
-                    }
-            );
-            requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS);
-        }
-    }
-
-
-    private void pushNotProvider() {
-        FirebaseMessaging.getInstance().subscribeToTopic("weather")
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        String msg = "Done";
-                        if (!task.isSuccessful()) {
-                            msg = "Failed";
-                        }
-                        Log.d(TAG, msg);
-                    }
-                });
-    }
-
     private void loadAds() {
         Application application = getApplication();
-        ((AdOpen)application).showAdIfAvailable(MainActivity.this,
+        ((AdOpen) application).showAdIfAvailable(MainActivity.this,
                 new AdOpen.OnShowAdCompleteListener() {
                     @Override
                     public void onShowAdComplete() {

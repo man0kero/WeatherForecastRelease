@@ -33,7 +33,7 @@
     <string name="sunset">Sunset</string>
     <string name="lick_to_see_more">Сlick to see more</string>
     <string name="onResponse_toast">City not found, try again</string>
-    <string name="updated">"Updated: "</string>
+    <string name="updated">Updated:</string>
     <string name="first_ad_text">Click the button to select the city, after that the forecast will be available to you!</string>
     <string name="first_ad_toolbar_tittle">You need to select a city</string>
     <string name="tittle">Check the weather forecast before going outside 😉</string>

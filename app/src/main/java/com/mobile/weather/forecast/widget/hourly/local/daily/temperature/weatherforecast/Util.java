@@ -15,7 +15,7 @@ public class Util {
 
 
     public static int provideIcon(String iconCode) {
-        switch(iconCode) {
+        switch (iconCode) {
             case "01n":
                 return R.drawable.ic_01n;
             case "01d":
@@ -53,7 +53,7 @@ public class Util {
         TimeZone timeZone = cal.getTimeZone();
         SimpleDateFormat sdf = new SimpleDateFormat(format, Locale.getDefault());
         sdf.setTimeZone(timeZone);
-        return sdf.format(new Date(time *1000));
+        return sdf.format(new Date(time * 1000));
     }
 
     public static String toDateFormatWid(long time, String format) {
@@ -64,22 +64,22 @@ public class Util {
 
     public static String toPercentString(double value) {
         int roundedValue = (int) Math.round(value * 100);
-        return Integer.toString(roundedValue) + "%";
+        return roundedValue + "%";
     }
 
     public static String toPercentStringWO(int value) {
         return value + "%";
     }
 
-    public static String toDegree(double result){
-        return (int)(result - 273.15) + "°";
+    public static String toDegree(double result) {
+        return (int) (result - 273.15) + "°";
     }
 
-    public static String toPressure(double input, Context context){
-        return (int)input + " " + context.getApplicationContext().getString(R.string.pressure);
+    public static String toPressure(double input, Context context) {
+        return (int) input + " " + context.getApplicationContext().getString(R.string.pressure);
     }
 
-    public static String toWindSpeed(double input, Context context){
-        return (int)input + " " + context.getApplicationContext().getString(R.string.wind);
+    public static String toWindSpeed(double input, Context context) {
+        return (int) input + " " + context.getApplicationContext().getString(R.string.wind);
     }
 }

@@ -13,10 +13,10 @@
             android:id="@+id/firstL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:orientation="vertical">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.appbar.AppBarLayout
                 android:id="@+id/daily_toolbar"
@@ -42,17 +42,17 @@
                 android:id="@+id/daily_recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"/>
+                android:layout_margin="8dp" />
 
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/hint_text"
+                style="@style/TextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/TextStyle"
-                android:textSize="20sp"
                 android:layout_gravity="center_horizontal"
-                android:text="@string/lick_to_see_more"/>
+                android:text="@string/lick_to_see_more"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
@@ -61,8 +61,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@id/secondL"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
                 android:id="@+id/bottom_sheet"
@@ -70,22 +70,23 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_main_bottom_sheets"
                 android:orientation="vertical"
-                app:behavior_peekHeight="30dp"
-                app:behavior_hideable="false"
                 android:visibility="invisible"
+                app:behavior_hideable="false"
+                app:behavior_peekHeight="30dp"
                 app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
 
                 <LinearLayout
-                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_main_bottom_sheets_swiper"
+                    android:layout_gravity="center"
                     android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"/>
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_main_bottom_sheets_swiper" />
 
-                <include layout="@layout/day_info"
-                    android:id="@+id/day_info"/>
+                <include
+                    android:id="@+id/day_info"
+                    layout="@layout/day_info" />
 
             </LinearLayout>
 
@@ -107,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center_horizontal"
                 ads:adSize="BANNER"
-                ads:adUnitId="@string/banner_id"/>
+                ads:adUnitId="@string/banner_id" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

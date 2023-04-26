@@ -37,4 +37,5 @@
     <string name="first_ad_text">Click the button to select the city, after that the forecast will be available to you!</string>
     <string name="first_ad_toolbar_tittle">You need to select a city</string>
     <string name="onWait_toast">Wait for data update</string>
+    <string name="emptyCityEdit_toast">First enter a city name</string>
 </resources>

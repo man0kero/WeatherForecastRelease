@@ -37,4 +37,5 @@
     <string name="first_ad_text">Нажмите на кнопку, чтобы выбрать город, после чего прогноз будет доступен для вас!</string>
     <string name="first_ad_toolbar_tittle">Вам необходимо выбрать город</string>
     <string name="onWait_toast">Подождите обновления данных</string>
+    <string name="emptyCityEdit_toast">Сначала введите название города</string>
 </resources>

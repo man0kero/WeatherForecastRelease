@@ -7,6 +7,7 @@ import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -78,6 +79,8 @@ public class CitySearchActivity extends AppCompatActivity {
         String cityName = binding.citySearchField.getText().toString().trim();
         if (!cityName.isEmpty()) {
             getCities(cityName);
+        } else {
+            Toast.makeText(this, this.getString(R.string.emptyCityEdit_toast), Toast.LENGTH_SHORT).show();
         }
     }
 

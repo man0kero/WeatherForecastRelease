@@ -36,6 +36,7 @@
     <string name="updated">Updated:</string>
     <string name="first_ad_text">Click the button to select the city, after that the forecast will be available to you!</string>
     <string name="first_ad_toolbar_tittle">You need to select a city</string>
+    <string name="emptyCityEdit_toast">First enter a city name</string>
 
     <string name="comma" translatable="false">, %1$s</string>
     <string name="app_name" translatable="false">Weather Forecast - Radar, Widget</string>
@@ -45,9 +46,9 @@
     <string name="key_lon" translatable="false">lon</string>
     <string name="key_is_started_up" translatable="false">Is started up</string>
 
-    <!-- TODO change id & key -->
     <string name="weather_api_key" translatable="false">86e907e14e12eac3762ed037116e4e43</string>
-    <string name="banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="interstitial_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="ad_open_id" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner_id" translatable="false">ca-app-pub-9176260107574133/5138475484</string>
+    <string name="interstitial_id" translatable="false">ca-app-pub-9176260107574133/4604107107</string>
+    <string name="ad_open_id" translatable="false">ca-app-pub-9176260107574133/3291025431</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-9176260107574133~6490536869</string>
 </resources>

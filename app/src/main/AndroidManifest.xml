@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.ads.AdOpen"
+        android:name="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.ads.AdOpen"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -17,31 +17,31 @@
         android:theme="@style/Theme.WeatherForecast"
         tools:targetApi="33">
         <activity
-            android:name=".view.MainActivity"
+            android:name="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.FirstAdActivity"
+            android:name="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.FirstAdActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.DailyWeatherActivity"
+            android:name="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.DailyWeatherActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.HourlyWeatherActivity"
+            android:name="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.HourlyWeatherActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.CitySearchActivity"
+            android:name="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.CitySearchActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.CurrentWeatherActivity"
+            android:name="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.CurrentWeatherActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".view.LoadingAdSplash"
+            android:name="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.LoadingAdSplash"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".view.LoadingAdSplash">
+    tools:context="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.LoadingAdSplash">
 
     <ImageView
         android:layout_width="150dp"

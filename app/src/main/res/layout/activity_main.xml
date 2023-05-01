@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/black"
-            tools:context=".view.MainActivity">
+            tools:context="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.MainActivity">
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/text_city"

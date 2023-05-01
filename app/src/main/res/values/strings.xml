@@ -39,7 +39,7 @@
     <string name="emptyCityEdit_toast">First enter a city name</string>
 
     <string name="comma" translatable="false">, %1$s</string>
-    <string name="app_name" translatable="false">Weather Forecast - Radar, Widget</string>
+    <string name="app_name" translatable="false">WeatherForecast</string>
     <string name="prefs_name" translatable="false">App_settings</string>
     <string name="key_city_name" translatable="false">City_name</string>
     <string name="key_lat" translatable="false">lat</string>
@@ -47,8 +47,8 @@
     <string name="key_is_started_up" translatable="false">Is started up</string>
 
     <string name="weather_api_key" translatable="false">86e907e14e12eac3762ed037116e4e43</string>
-    <string name="banner_id" translatable="false">ca-app-pub-9176260107574133/8795106312</string>
-    <string name="interstitial_id" translatable="false">ca-app-pub-9176260107574133/4586104859</string>
-    <string name="ad_open_id" translatable="false">ca-app-pub-9176260107574133/1026133797</string>
-    <string name="admob_app_id" translatable="false">ca-app-pub-9176260107574133~6490536869</string>
+    <string name="banner_id" translatable="false">ca-app-pub-9176260107574133/5238224437</string>
+    <string name="interstitial_id" translatable="false">ca-app-pub-9176260107574133/5638513837</string>
+    <string name="ad_open_id" translatable="false">ca-app-pub-9176260107574133/1699268820</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-9176260107574133~3587065564</string>
 </resources>

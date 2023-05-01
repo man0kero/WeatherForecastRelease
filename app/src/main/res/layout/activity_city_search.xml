@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
-        tools:context=".view.CitySearchActivity">
+        tools:context="com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.CitySearchActivity">
 
 
         <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"

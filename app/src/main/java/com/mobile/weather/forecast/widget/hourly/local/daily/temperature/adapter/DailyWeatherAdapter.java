@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.databinding.ItemDailyWeatherBinding;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.databinding.ItemDailyWeatherBinding;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.model.DailyWeatherModel;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.view.DailyWeatherActivity;
 

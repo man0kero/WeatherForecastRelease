@@ -6,8 +6,7 @@ import android.os.CountDownTimer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.R;
-
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.R;
 public class LoadingAdSplash extends AppCompatActivity {
     private static final long COUNTER_TIME = 2;
     private long secondsRemaining;

@@ -15,10 +15,10 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.android.gms.ads.AdRequest;
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.R;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.R;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.adapter.CityListAdapter;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.ads.InterstitialAdImpl;
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.databinding.ActivityCitySearchBinding;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.databinding.ActivityCitySearchBinding;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.model.GeoCodeModel;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.viewModel.CitySearchActivityViewModel;
 

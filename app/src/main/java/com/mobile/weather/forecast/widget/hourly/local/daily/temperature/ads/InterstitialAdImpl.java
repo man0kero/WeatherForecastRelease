@@ -10,7 +10,7 @@ import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.R;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.R;
 
 public class InterstitialAdImpl implements AdsController {
 

@@ -5,7 +5,7 @@ import android.widget.Toast;
 
 import androidx.lifecycle.MutableLiveData;
 
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.R;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.R;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.api.ApiProvider;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.model.WeatherDataModel;
 

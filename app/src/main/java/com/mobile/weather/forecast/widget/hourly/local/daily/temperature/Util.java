@@ -1,9 +1,6 @@
 package com.mobile.weather.forecast.widget.hourly.local.daily.temperature;
 
 import android.content.Context;
-
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.R;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;

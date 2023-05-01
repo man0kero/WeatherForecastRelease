@@ -8,10 +8,10 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.android.gms.ads.AdRequest;
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.R;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.R;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.databinding.ActivityHourlyWeatherBinding;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.adapter.HourlyWeatherAdapter;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.ads.InterstitialAdImpl;
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.databinding.ActivityHourlyWeatherBinding;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.model.HourlyWeatherModel;
 
 import java.util.List;

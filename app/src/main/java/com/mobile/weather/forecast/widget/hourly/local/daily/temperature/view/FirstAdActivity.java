@@ -7,9 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.google.android.gms.ads.AdRequest;
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.R;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.R;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.databinding.ActivityFirstAdBinding;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.ads.InterstitialAdImpl;
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.databinding.ActivityFirstAdBinding;
 
 public class FirstAdActivity extends AppCompatActivity {
     private AdRequest adRequest;

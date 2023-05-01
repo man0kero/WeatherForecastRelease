@@ -1,4 +1,4 @@
-package com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast;
+package com.mobile.weather.forecast.widget.hourly.local.daily.temperature;
 
 import android.content.Context;
 

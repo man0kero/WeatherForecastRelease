@@ -21,10 +21,10 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.gms.ads.AdRequest;
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.R;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.R;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.ads.AdOpen;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.ads.InterstitialAdImpl;
-import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.weatherforecast.databinding.ActivityMainBinding;
+import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.databinding.ActivityMainBinding;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.model.DailyWeatherModel;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.model.HourlyWeatherModel;
 import com.mobile.weather.forecast.widget.hourly.local.daily.temperature.model.WeatherDataModel;

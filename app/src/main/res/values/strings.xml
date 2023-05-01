@@ -47,8 +47,8 @@
     <string name="key_is_started_up" translatable="false">Is started up</string>
 
     <string name="weather_api_key" translatable="false">86e907e14e12eac3762ed037116e4e43</string>
-    <string name="banner_id" translatable="false">ca-app-pub-9176260107574133/5138475484</string>
-    <string name="interstitial_id" translatable="false">ca-app-pub-9176260107574133/4604107107</string>
-    <string name="ad_open_id" translatable="false">ca-app-pub-9176260107574133/3291025431</string>
+    <string name="banner_id" translatable="false">ca-app-pub-9176260107574133/8795106312</string>
+    <string name="interstitial_id" translatable="false">ca-app-pub-9176260107574133/4586104859</string>
+    <string name="ad_open_id" translatable="false">ca-app-pub-9176260107574133/1026133797</string>
     <string name="admob_app_id" translatable="false">ca-app-pub-9176260107574133~6490536869</string>
 </resources>
